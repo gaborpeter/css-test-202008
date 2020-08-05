@@ -1,0 +1,76 @@
+body {
+  font-family: september, sans-serif;
+  padding: 50px 20px;
+  text-align: center;
+}
+body .year {
+  color: #083366;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  body .year {
+    font-size: 56px;
+  }
+}
+@media (min-width: 1024px) {
+  body .year {
+    font-size: 80px;
+  }
+}
+body .date {
+  font-size: 40px;
+  line-height: 1;
+  color: #083366;
+}
+body .date .month {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  body .date {
+    font-size: 44px;
+  }
+}
+@media (min-width: 1024px) {
+  body .date {
+    font-size: 56px;
+  }
+}
+body .team .country-flag {
+  max-width: 80px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transform: skewX(-20deg);
+}
+body .team .team-name, body .team .championship, body .team .academy {
+  color: #083366;
+  line-height: 1.2;
+  text-align: left;
+}
+body .team .team-name {
+  font-size: 20px;
+}
+body .team .championship {
+  font-size: 18px;
+}
+body .team .academy {
+  color: #39e4a4;
+  font-size: 14px;
+}
+body .btn-explore {
+  background-color: #083366;
+  border: 2px solid #083366;
+  padding: 15px 25px;
+  color: #fff;
+}
+body .btn-explore:focus {
+  outline: none;
+  box-shadow: none;
+}
+body .btn-explore:hover {
+  background-color: #fff;
+  color: #083366;
+}
+
+/*# sourceMappingURL=style.css.map */

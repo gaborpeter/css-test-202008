@@ -1,0 +1,84 @@
+body {
+  font-family: september, sans-serif;
+  padding: 50px 20px;
+  $font-size: 40px;
+  $main-color: #083366;
+  $success-color: #39e4a4;
+  text-align: center;
+
+  .year {
+    color: $main-color;
+    margin-bottom: 20px;
+    font-size: $font-size;
+    text-align: left;
+    @media (min-width: 768px) {
+      font-size: $font-size*1.4;
+    }
+    @media (min-width: 1024px) {
+      font-size: $font-size*2;
+    }
+  }
+
+  .date {
+    font-size: $font-size;
+    line-height: 1;
+    color: $main-color;
+
+    .month {
+      font-size: $font-size/2;
+    }
+
+    @media (min-width: 768px) {
+      font-size: $font-size*1.1;
+    }
+    @media (min-width: 1024px) {
+      font-size: $font-size*1.4;
+    }
+  }
+
+  .team {
+    .country-flag {
+      max-width: 80px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      transform: skewX(-20deg);
+    }
+
+    .team-name, .championship, .academy {
+      color: $main-color;
+      line-height: 1.2;
+      text-align: left;
+    }
+
+    .team-name {
+      font-size: $font-size/2;
+    }
+
+    .championship {
+      font-size: $font-size*0.45;
+    }
+
+    .academy {
+      color: $success-color;
+      font-size: $font-size*0.35;
+    }
+  }
+
+  .btn-explore {
+    background-color: $main-color;
+    border: 2px solid $main-color;
+    padding: 15px 25px;
+    color: #fff;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:hover{
+      background-color: #fff;
+      color: $main-color;
+    }
+
+  }
+}
