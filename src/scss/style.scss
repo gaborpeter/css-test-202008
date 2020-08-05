@@ -1,0 +1,148 @@
+$blue: #0e305f;
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: $blue;
+	line-height: 1.2;
+}
+
+b {
+	font-weight: bold;
+}
+
+.main {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	&-title {
+		font-size: 56px;
+		margin-bottom: 80px;
+	}
+	&-table {
+		display: flex;
+		flex-direction: column;
+		@media (max-width: 991px) {
+			flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
+		&__item {
+			border: 1px solid grey;
+			margin-bottom: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 16px;
+			@media (max-width: 991px) {
+				flex-direction: column;
+				align-items: flex-start;
+				width: 48%;
+            }
+            @media(max-width: 768px) {
+                width: 100%;
+            }
+		}
+		&__btn {
+			max-width: 260px;
+			width: 100%;
+			align-items: flex-end;
+			display: flex;
+			@media (max-width: 991px) {
+				max-width: 220px;
+			}
+		}
+	}
+}
+
+.date {
+	display: flex;
+	align-items: center;
+	@media (max-width: 991px) {
+		margin-bottom: 12px;
+	}
+	&-number {
+		color: $blue;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+		&:first-child {
+			margin-right: 8px;
+		}
+		&:nth-child(2) {
+			margin-left: 8px;
+		}
+		span {
+			font-size: 16px;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		p {
+			margin-bottom: 0px;
+			font-size: 36px;
+			font-weight: bold;
+		}
+	}
+}
+
+.destination {
+	display: flex;
+	align-items: center;
+	color: $blue;
+	@media (max-width: 991px) {
+		margin-bottom: 12px;
+	}
+	&-img {
+		margin-right: 16px;
+	}
+	&-desc {
+		&__text {
+			p {
+				margin-bottom: 0px;
+				color: $blue;
+				font-weight: bold;
+				font-size: 18px;
+				span {
+					color: #67de99;
+				}
+			}
+		}
+		&__title {
+			color: $blue;
+			font-weight: bold;
+			font-size: 26px;
+		}
+	}
+}
+
+.btn {
+	background: $blue;
+	max-width: 220px;
+	height: 46px;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	margin-left: auto;
+}
+
+.btn:hover {
+	text-decoration: none;
+	color: $blue;
+	background: #fff;
+	border: 1px solid $blue;
+}
+
+a {
+	transition: all 375ms;
+}
+
+:focus {
+	outline: none;
+}
