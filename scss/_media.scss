@@ -1,0 +1,343 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 800px;
+    }
+    .champs {
+        &__year {
+            font-size: 45px;
+            line-height: 45px;
+        }
+    }
+    .wrapper {
+        .competition {
+            padding: 25px 16px;
+            &__num {
+                font-size: 35px;
+                line-height: 35px;
+                margin-bottom: -3px;
+            }
+            &__mon {
+                letter-spacing: -0.5px;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 800;
+            }
+            &__line {
+                font-size: 35px;
+                line-height: 35px;
+                margin: 0 5px;
+            }
+            &__img {
+                height: 45px;
+                margin-right: 10px;
+            }
+            &__country {
+                font-size: 18px;
+                line-height: 18px;
+            }
+            &__status {
+                font-size: 13px;
+                line-height: 13px;
+                margin-top: 4px;
+            }
+            &__level {
+                font-size: 12px;
+                line-height: 12px;
+                margin-top: 4px;
+            }
+            &__btn {
+                button {
+                    font-size: 12px;
+                    line-height: 12px;
+                    height: 50px;
+                    width: 190px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 450px;
+    }
+    .champs {
+        &__year {
+            font-size: 37px;
+            line-height: 37px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+    .wrapper {
+        .competition {
+            flex-direction: column;
+            padding: 25px 16px;
+            &__dates {
+                margin-bottom: 15px;
+            }
+            &__num {
+                font-size: 33px;
+                line-height: 33px;
+                margin-bottom: -3px;
+            }
+            &__mon {
+                letter-spacing: -0.5px;
+                font-size: 13px;
+                line-height: 13px;
+                font-weight: 800;
+            }
+            &__line {
+                font-size: 33px;
+                line-height: 33px;
+                margin: 0 7px;
+            }
+            &__location {
+                margin-bottom: 15px;
+            }
+            &__img {
+                height: 45px;
+                margin-right: 15px;
+            }
+            &__country {
+                font-size: 17px;
+                line-height: 17px;
+            }
+            &__status {
+                font-size: 13px;
+                line-height: 13px;
+                margin-top: 4px;
+            }
+            &__level {
+                font-size: 11px;
+                line-height: 11px;
+                margin-top: 4px;
+            }
+            &__btn {
+                button {
+                    font-size: 12px;
+                    line-height: 12px;
+                    height: 50px;
+                    width: 190px;
+                    transition: none;
+                    &:hover {
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .container {
+        max-width: 376px;
+    }
+    .champs {
+        &__year {
+            font-size: 37px;
+            line-height: 37px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+    .wrapper {
+        .competition {
+            flex-direction: column;
+            padding: 25px 16px;
+            &__dates {
+                margin-bottom: 15px;
+            }
+            &__num {
+                font-size: 28px;
+                line-height: 28px;
+                margin-bottom: -3px;
+            }
+            &__mon {
+                letter-spacing: -0.5px;
+                font-size: 12px;
+                line-height: 12px;
+                font-weight: 800;
+            }
+            &__line {
+                font-size: 28px;
+                line-height: 28px;
+                margin: 0 7px;
+            }
+            &__location {
+                margin-bottom: 15px;
+            }
+            &__img {
+                height: 40px;
+                margin-right: 15px;
+            }
+            &__country {
+                font-size: 15px;
+                line-height: 15px;
+            }
+            &__status {
+                font-size: 12px;
+                line-height: 12px;
+                margin-top: 4px;
+            }
+            &__level {
+                font-size: 11px;
+                line-height: 11px;
+                margin-top: 4px;
+            }
+            &__btn {
+                button {
+                    font-size: 12px;
+                    line-height: 12px;
+                    height: 45px;
+                    width: 190px;
+                    transition: none;
+                    &:hover {
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .container {
+        max-width: 320px;
+    }
+    .champs {
+        &__year {
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+    }
+    .wrapper {
+        .competition {
+            flex-direction: column;
+            padding: 23px 14px;
+            &__dates {
+                margin-bottom: 15px;
+            }
+            &__num {
+                font-size: 27px;
+                line-height: 27px;
+                margin-bottom: -3px;
+            }
+            &__mon {
+                letter-spacing: -0.5px;
+                font-size: 12px;
+                line-height: 12px;
+                font-weight: 800;
+            }
+            &__line {
+                font-size: 27px;
+                line-height: 27px;
+                margin: 0 7px;
+            }
+            &__location {
+                margin-bottom: 15px;
+            }
+            &__img {
+                height: 40px;
+                margin-right: 15px;
+            }
+            &__country {
+                font-size: 15px;
+                line-height: 15px;
+            }
+            &__status {
+                width: 100px;
+                font-size: 12px;
+                line-height: 12px;
+                margin-top: 4px;
+            }
+            &__level {
+                font-size: 11px;
+                line-height: 11px;
+                margin-top: 4px;
+            }
+            &__btn {
+                button {
+                    font-size: 12px;
+                    line-height: 12px;
+                    height: 45px;
+                    width: 190px;
+                    transition: none;
+                    &:hover {
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .container {
+        max-width: 300px;
+    }
+    .champs {
+        &__year {
+            font-size: 34px;
+            line-height: 34px;
+            margin-bottom: 23px;
+            text-align: center;
+        }
+    }
+    .wrapper {
+        .competition {
+            flex-direction: column;
+            padding: 20px 13px;
+            &__dates {
+                margin-bottom: 15px;
+            }
+            &__num {
+                font-size: 26px;
+                line-height: 26px;
+                margin-bottom: -3px;
+            }
+            &__mon {
+                letter-spacing: -0.5px;
+                font-size: 12px;
+                line-height: 12px;
+                font-weight: 800;
+            }
+            &__line {
+                font-size: 26px;
+                line-height: 26px;
+                margin: 0 7px;
+            }
+            &__location {
+                margin-bottom: 15px;
+            }
+            &__img {
+                height: 40px;
+                margin-right: 15px;
+            }
+            &__country {
+                font-size: 14px;
+                line-height: 14px;
+            }
+            &__status {
+                font-size: 12px;
+                line-height: 12px;
+                margin-top: 4px;
+            }
+            &__level {
+                font-size: 11px;
+                line-height: 11px;
+                margin-top: 4px;
+            }
+            &__btn {
+                button {
+                    font-size: 12px;
+                    line-height: 12px;
+                    height: 43px;
+                    width: 180px;
+                    transition: none;
+                    &:hover {
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
