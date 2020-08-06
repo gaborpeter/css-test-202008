@@ -1,0 +1,130 @@
+@import "utils/reset";
+@import "utils/vars";
+@import "utils/font";
+
+@import "sprite";
+
+@import "header";
+
+html, body {
+  height: 100%;
+  font-family: $mainFont;
+  color: $mainFontColor;
+  font-size: $mainFontSize;
+  font-weight: normal;
+  line-height: $mainLineHeight;
+}
+
+.wrap {
+  background-color: #fff;
+  min-height: 100%;
+  padding: 200px 0px 200px 0px;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 10px;
+  @media (max-width:1024px){
+    max-width: 980px;
+
+  }
+  @media (max-width:768px){
+    max-width: 740px;
+
+  }
+  @media (max-width:425px){
+    max-width: 100%;
+  }
+}
+
+
+.title {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0px 0px 30px 0px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px 0px 25px 0px;
+  border: 2px solid #eeee;
+  @media (max-width:912px){
+    justify-content: center;
+  }
+}
+.row-item {
+  display: flex;
+  margin: 0px 0px 20px 0px;
+  padding: 20px 20px 0px 20px;
+
+}
+.item-date {
+		// .item-date__num
+		&__num {
+      font-size: 40px;
+    }
+		// .item-date__mon
+		&__mon {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+		// .item-date__til
+		&__til {
+      display: inline-block;
+      width: 15px;
+      height: 4px;
+      background-color:$mainFontColor;
+      margin: 17px 10px 0;
+    }
+}
+.flag-block {
+  @media (max-width:375px){
+    flex-direction: column;
+  }
+		// .flag-block__img
+		&__img {
+      margin: 0px 15px 0px 0px;
+      @media (max-width:375px){
+        margin: 0px 0px 15px 0px;
+      }
+    }
+		// .flag-block__body
+		&__body {}
+		// .flag-block__title
+		&__title {
+      font-size: 25px;
+      text-transform: uppercase;
+      margin: 0px 0px 20px 0px;
+    }
+		// .flag-block__content
+		&__content {
+      margin: 0px 0px 15px 0px;
+
+    }
+		// .flag-block__bottom
+		&__bottom {
+      color: $green;
+    }
+}
+.btn {
+  display: inline-flex;
+  padding: 15px 25px;
+  background-color: $mainFontColor;
+  border: 1px solid $mainFontColor;
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: all 0.3s ease-in;
+  @media (max-width:397px){
+    font-size: 15px;
+  }
+  &:hover, &:focus {
+    background-color: #fff;
+    color:$mainFontColor;
+  }
+
+}

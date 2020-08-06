@@ -1,0 +1,141 @@
+// Default
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+	margin: 0;
+	padding: 0;
+}
+
+// Links
+a {
+  text-decoration: none;
+  background-color: transparent;
+  &:active, &:hover {
+    outline: 0;
+  }
+}
+
+// List
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+// Default
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: border-box; }
+:focus { outline: 0; }
+
+img, audio, video { max-width: 100%; height: auto; }
+audio, canvas, iframe, video, img, svg { vertical-align: middle; }
+iframe { border: 0 }
+
+// From
+textarea {
+  resize: none; /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+input, textarea, select, button { outline: none; border: none; font-size: 100%; margin: 0;}
+button, input { line-height: normal; }
+
+// Table
+table { border-collapse: collapse; border-spacing: 0; }
+td, th { padding: 0; text-align: left; }
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[clear] {
+  clear: both;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
