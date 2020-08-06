@@ -1,0 +1,18 @@
+@media screen and (max-width: 776px){
+  .main__content{
+    flex-direction: column;
+    .main__content-row{
+      flex-direction: column;
+      align-items: center;
+      .match__info{
+        flex-direction: column;
+        .match__info-command{
+          margin-bottom: 20px;
+          img{
+            max-width: 35%;
+          }
+        }
+      }
+    }
+  }
+}

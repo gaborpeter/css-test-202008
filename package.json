@@ -1,0 +1,15 @@
+{
+  "name": "peter",
+  "version": "1.0.0",
+  "description": "test\u001b[D\u001b[D\u001b[D\u001b[Dscsstest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "webitall",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

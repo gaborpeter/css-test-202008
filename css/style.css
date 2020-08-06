@@ -1,0 +1,101 @@
+/* fonts adding */
+@font-face {
+  font-family: 'Red Rose';
+  src: url("./fonts/") format("woff2"), url("./fonts/RedRose-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/OpenSans-Bold.woff2") format("woff2"), url("./fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/OpenSans-SemiBold.woff2") format("woff2"), url("./fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/OpenSans-Regular.woff2") format("woff2"), url("./fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+button {
+  outline: none;
+  border: none; }
+
+*, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif; }
+
+.main__content-row, .row__date-box, .date-box, .match__info, .match__info-command, .block {
+  display: flex; }
+
+.main {
+  padding: 20px;
+  color: #37406d;
+  /* single row */
+  /* date box */
+  /* match info */ }
+  .main__current-year {
+    font-size: 50px;
+    font-weight: 600; }
+  .main .main__content-row {
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid #dad7d7cc;
+    margin-bottom: 5px; }
+  .main .row__date-box {
+    flex-basis: 25%;
+    padding: 10px; }
+    .main .row__date-box .date-box {
+      flex-direction: column;
+      align-items: center; }
+      .main .row__date-box .date-box__number {
+        position: relative;
+        font-size: 35px;
+        font-weight: 600;
+        font-family: "Red Rose", sans-serif; }
+    .main .row__date-box .first-date {
+      margin-right: 40px; }
+      .main .row__date-box .first-date .date-box__number::after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 1px);
+        right: -22px;
+        width: 8px;
+        height: 2px;
+        background-color: #37406d; }
+  .main .match__info {
+    flex-basis: 72%;
+    justify-content: space-between;
+    align-items: center; }
+    .main .match__info .match__info-command {
+      align-items: center; }
+      .main .match__info .match__info-command .flag {
+        margin-right: 10px; }
+      .main .match__info .match__info-command .block {
+        flex-direction: column; }
+        .main .match__info .match__info-command .block__command-name {
+          text-transform: uppercase;
+          font-weight: 800;
+          font-size: 25px; }
+        .main .match__info .match__info-command .block__region {
+          text-transform: capitalize;
+          font-weight: 800; }
+        .main .match__info .match__info-command .block__league {
+          color: #0ee26e; }
+    .main .match__info .btn {
+      text-transform: uppercase;
+      color: #fff;
+      padding: 14px;
+      background-color: #37406d;
+      cursor: pointer; }

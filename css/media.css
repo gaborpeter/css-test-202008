@@ -1,0 +1,12 @@
+@media screen and (max-width: 776px) {
+  .main__content {
+    flex-direction: column; }
+    .main__content .main__content-row {
+      flex-direction: column;
+      align-items: center; }
+      .main__content .main__content-row .match__info {
+        flex-direction: column; }
+        .main__content .main__content-row .match__info .match__info-command {
+          margin-bottom: 20px; }
+          .main__content .main__content-row .match__info .match__info-command img {
+            max-width: 35%; } }

@@ -1,0 +1,51 @@
+/* fonts adding */
+@font-face {
+  font-family: 'Red Rose';
+  src: url('./fonts/') format('woff2'),
+      url('./fonts/RedRose-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('./fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-SemiBold.woff2') format('woff2'),
+      url('./fonts/OpenSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('./fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$main-font: 'Open Sans', sans-serif;
+$secondary-font: 'Red Rose', sans-serif;
+$main-color: #37406d;
+$secondary-color: #0ee26e;
+
+button{
+  outline: none;
+  border: none;
+}
+*,body{
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+}
+.main__content-row, .row__date-box, .date-box, .match__info, .match__info-command, .block{
+  display: flex;
+}

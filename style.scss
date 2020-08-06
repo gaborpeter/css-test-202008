@@ -1,0 +1,78 @@
+@import'vars';
+.main{
+  padding: 20px;
+  color: $main-color;
+  &__current-year{
+    font-size: 50px;
+    font-weight: 600;
+  }
+/* single row */
+  .main__content-row{
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid #dad7d7cc;
+    margin-bottom: 5px;
+  }
+  /* date box */
+  .row__date-box{
+    flex-basis: 25%;
+    padding: 10px;
+    .date-box{
+      flex-direction: column;
+      align-items: center;
+      &__number{
+       position: relative;
+       font-size: 35px;
+       font-weight: 600;
+       font-family: $secondary-font;
+      }
+    }
+    .first-date{
+      margin-right: 40px;
+      .date-box__number::after{
+        content: '';
+        position: absolute;
+        top: calc(50% - 1px);
+        right: -22px;
+        width: 8px;
+        height: 2px;
+        background-color: $main-color;
+      }
+    }
+  }
+  /* match info */
+  .match__info{
+    flex-basis: 72%;
+    justify-content: space-between;
+    align-items: center;
+    .match__info-command{
+      align-items: center;
+      .flag{
+        margin-right: 10px;
+      }
+      .block{
+        flex-direction: column;
+        &__command-name{
+          text-transform: uppercase;
+          font-weight: 800;
+          font-size: 25px;
+        }
+        &__region{
+          text-transform: capitalize;
+          font-weight: 800;
+        }
+        &__league{
+          color: $secondary-color;
+        }
+      }
+    }
+    .btn{
+      text-transform: uppercase;
+      color: #fff;
+      padding: 14px;
+      background-color: $main-color;
+      cursor: pointer;
+    }
+  }
+  
+}
