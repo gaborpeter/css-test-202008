@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;  
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {  
+  font-size: $global-font-size;
+  font-family: $global-font-family;  
+  color: $global-text-color;
+  background-color: #fff;    
+}
+
+a {
+  cursor: pointer;
+  color: $global-link-color;
+  &:hover,
+  &:focus {
+    color: lighten($global-link-color, 10%);
+  }
+}
+
+label {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+}

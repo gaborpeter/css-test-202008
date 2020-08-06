@@ -1,0 +1,31 @@
+.btn-event{
+  @include outline(0);
+  cursor: pointer;
+  border: none;  
+  display: inline-flex;
+  padding: 10px 20px;  
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+  height: 65px;     
+  font-family: $global-font-family;  
+  font-weight: 700;
+  font-size: 18px;
+  @include breakpoint(md){ 
+    font-size: 22px;
+  }
+  line-height: 1.27;
+  text-align: center;  
+  background-color: #002F62;
+  color: #FFFFFF; 
+  text-transform: uppercase;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out;
+  &:hover, &:active, &:focus, &:active:hover{
+    @include outline(0);    
+  }  
+  &:hover, &.active, &:active, &:active:hover,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active { 
+    background-color: #3567f5;    
+  }
+}

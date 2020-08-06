@@ -1,0 +1,31 @@
+
+@mixin breakpoint($range) {
+
+  @if $range == sm {@media (min-width: $sm) { @content; }}
+  @else if $range == md {@media (min-width: $md) { @content; }}
+  @else if $range == lg {@media (min-width: $lg) { @content; }}
+  @else if $range == xl {@media (min-width: $xl) { @content; }}
+  @else if $range == xxl {@media (min-width: $xxl) { @content; }}
+
+  @else if $range == xs-only {@media screen and (min-width: $xs) and (max-width: ($sm - 1)) { @content; }}
+  @else if $range == sm-only {@media screen and (min-width: $sm) and (max-width: ($md - 1)) { @content; }}
+  @else if $range == md-only {@media screen and (min-width: $md) and (max-width: ($lg - 1)) { @content; }}
+  @else if $range == lg-only {@media screen and (min-width: $lg) and (max-width: ($xl - 1)) { @content; }}
+  @else if $range == xl-only {@media screen and (min-width: $xl) and (max-width: ($xxl - 1)) { @content; }}
+  
+  @else if $range == sm-down {@media screen and (max-width: ($md - 1)) { @content; }}
+  @else if $range == md-down {@media screen and (max-width: ($lg - 1)) { @content; }}
+  @else if $range == lg-down {@media screen and (max-width: ($xl - 1)) { @content; }}
+  @else if $range == xl-down {@media screen and (max-width: ($xxl - 1)) { @content; }}  
+}
+
+
+
+@mixin outline($outline) {
+  outline: $outline;
+  outline-offset: $outline;
+  &:active, &:hover, &:focus {
+    outline: $outline;
+    outline-offset: $outline;
+  }   
+}

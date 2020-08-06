@@ -1,0 +1,23 @@
+@for $i from 1 through 6 {
+  h#{$i} {        
+    margin: 0;
+    // font-weight: 500;    
+    // font-size: map-get($map-heading-size, h#{$i});     
+  }
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {  
+  @include outline(0);
+  text-decoration: none;
+  cursor: pointer;
+}
+p{     
+  font-family: $global-font-family;
+  margin: 0 0 1em;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+a,button{
+  -webkit-tap-highlight-color: transparent;
+}

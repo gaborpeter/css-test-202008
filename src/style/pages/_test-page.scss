@@ -1,0 +1,136 @@
+.content-container{
+  padding: 15px;
+  @include breakpoint(sm){
+    padding: 24px;
+  }
+  @include breakpoint(xl){
+    padding: 32px;
+  }  
+}
+.title {
+  font-size: 64px; 
+  margin-bottom: 32px; 
+}
+.event-card{
+  padding: 24px 0;
+  border: 2px solid #EAF0F4;
+  border-radius: 4px;
+  &:not(:last-child){
+    margin-bottom: 24px;
+  }
+  display: grid;
+  grid-gap: 32px 0;
+  @include breakpoint(md){    
+    grid-gap: 24px 0;
+    grid-template-columns: 250px 1fr;
+  }
+  @include breakpoint(xl){
+    grid-template-columns: 250px 1fr auto;
+  }
+}
+.date-item{
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-content: center;
+  @include breakpoint(md){
+    justify-content: flex-start;
+  }
+  // @include breakpoint(xl){
+    
+  // }
+  .start-date{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .end-date{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .dash{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0 12px;
+  }
+  .start-mon{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .end-mon{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    grid-column-start: 3;
+  }
+}
+.info-item{
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  @include breakpoint(md){
+    align-items: center;
+  }
+  // @include breakpoint(md){
+    
+  // }
+  // @include breakpoint(xl){
+    
+  // }
+  .flag-container{
+    flex: 0 0 auto;
+    width: 45px;
+    margin-right: 8px;
+    @include breakpoint(md){ 
+      width: 100px;
+      margin-right: 20px;
+    }    
+  }
+  .country-flag{
+    display: block;
+    width: 100%;    
+    height: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
+  }
+  .event-info{
+    display: flex;
+    flex-direction: column;
+    .event-place{
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .event-name{
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .event-type{
+      font-size: 16px;
+      font-weight: 500;
+      color: #06E292;
+    }
+  }
+}
+.action-container{
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include breakpoint(md){
+    grid-column: 1/3;
+    justify-content: flex-end;
+  }
+  @include breakpoint(xl){
+    grid-column: unset;
+    justify-content: center;
+  }
+}

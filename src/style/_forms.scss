@@ -1,0 +1,45 @@
+// $pl-color: rgba(#7686A0,0.4);
+$pl-color: #c8ced9;
+input::-webkit-input-placeholder {
+	color: $pl-color !important;
+}  
+input:-moz-placeholder { 
+	color: $pl-color !important;
+}  
+input::-moz-placeholder {  
+	color: $pl-color !important;
+}  
+input:-ms-input-placeholder {  
+	color: $pl-color !important;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	-webkit-box-shadow: inset 0 0 0 50px #fff;
+	-webkit-text-fill-color: $pl-color;  
+}
+
+
+// input[type='text'],
+// input[type='email'],
+// input[type='tel'],
+// input[type='password'],
+// input[type='search'],
+// textarea {
+//   &::-webkit-input-placeholder {    
+//     color: #7686A0;
+//   }
+//   &::-moz-placeholder {   
+//     color: #7686A0;
+//   }
+//   &:-ms-input-placeholder {    
+//     color: #7686A0;
+//   }
+//   &:-moz-placeholder {   
+//     color: #7686A0;
+//   }
+// }
+
+textarea {
+  resize: vertical;
+}

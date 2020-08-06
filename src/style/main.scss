@@ -1,0 +1,28 @@
+html{
+  height: 100%;
+}
+body {
+  font-family: sans-serif; 
+  height: 100%;  
+}
+
+
+
+@import 'normalize.css';
+@import 'variables';
+@import 'mixins';
+//@import 'fonts'; //used google fonts
+@import 'icons';
+@import 'base';
+@import 'wrapper';
+@import 'plugins';
+@import 'animations';
+@import 'typography';
+@import 'forms';
+@import 'buttons';
+@import 'video';
+@import 'helpers';
+
+
+@import './components/main';
+@import './pages/test-page';
