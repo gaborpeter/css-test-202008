@@ -1,0 +1,99 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    .competition {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 10px;
+        border: 1px solid rgb(235, 240, 244);
+        padding: 30px 20px;
+        &__dates {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+        &__date {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            
+            font-weight: 700;
+            text-align: left;
+        }
+        &__num {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__mon {
+            letter-spacing: -0.5px;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 800;
+        }
+        &__line {
+            font-size: 40px;
+            line-height: 40px;
+            margin: 0 7px;
+        }
+        &__location {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+        }
+        &__img {
+            display: block;
+            height: 53px;
+            width: auto;
+            margin: 5px 20px 5px 0;
+
+        }
+        &__country {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 600;
+        }
+        &__status {
+            font-size: 15px;
+            line-height: 15px;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+        &__level {
+            font-size: 13px;
+            line-height: 13px;
+            font-weight: 600;
+            margin-top: 5px;
+            color: rgb(145, 231, 181);
+        }
+        &__btn {
+            display: block;
+            button {
+                background-color: $main-color;
+                border: none;
+                font-weight: 700;
+                text-align: center;
+                font-size: 13px;
+                line-height: 13px;
+                height: 55px;
+                width: 200px;
+                padding: 15px;
+                cursor: pointer;
+                color: #fff;
+                transition: 0.4s background-color;
+                &:hover {
+                    background-color: rgb(26, 87, 170);
+                }
+                &:active {
+                    outline: none;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

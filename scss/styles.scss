@@ -1,0 +1,16 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+
+* {
+    font-family: 'Arial', serif;
+    color: $main-color;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 50px 40px 0;
+}
+
+@import 'blocks/champs';
+@import 'blocks/competition';
+@import 'media';
