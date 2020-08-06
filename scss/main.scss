@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+$font-ubuntu-regular: 'Ubuntu', sans-serif;
+$blue-color: #002f62;
+$green-color: #00e293;
+
+.kart-schedule{
+  font-family: $font-ubuntu-regular;
+  margin: 30px;
+  .year{
+    color: $blue-color;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .kart-event-container{
+    margin: 30px 0;
+    .kart-event{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #eaf0f4;
+      margin-bottom: 8px;
+      padding: 20px;
+      .kart-date{
+        display: flex;
+        color: $blue-color;
+        .date-day{
+          font-size: 35px;
+          font-weight: 700;
+        }
+        .between-mark{
+          margin: 0 10px;
+          padding-top: 5px;
+          font-weight: bold;
+          font-size: 30px;
+        }
+        .date-month{
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+      .kart-info{
+        display: flex;
+        color: $blue-color;
+        font-weight: bold;
+        .kart-location-flag img{
+          width: 80px;
+          height: 50px;
+          margin-right: 10px;
+        }
+        .kart-details{
+          >div{
+            margin-bottom: 5px;
+          }
+          .kart-name{
+            font-size: 12px;
+          }
+          .kart-class{
+            font-size: 11px;
+            font-weight: normal;
+            color: $green-color;
+          }
+        }
+      }
+      .kart-explore-btn{
+        background-color: $blue-color;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 11px;
+        cursor: pointer;
+      }
+    }
+  }
+}

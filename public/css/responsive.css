@@ -1,0 +1,27 @@
+@media screen and (max-width: 700px) {
+  .kart-event-container {
+    display: flex;
+  }
+  .kart-event-container .kart-event {
+    flex-direction: column;
+    margin-right: 10px;
+    min-width: calc(50% - 55px);
+  }
+  .kart-event-container .kart-event > div {
+    margin-bottom: 35px;
+  }
+  .kart-event-container .kart-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  .kart-event-container .kart-explore-btn {
+    margin-bottom: 0 !important;
+  }
+}
+@media screen and (max-width: 460px) {
+  .kart-event-container {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
