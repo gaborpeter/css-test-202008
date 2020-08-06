@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "Gill Sans", monospace;
+  src: url("./assets/fonts/Gill Sans Medium Italic.otf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: monospace;
+  color: #003063;
+  padding: 7rem 5.6rem 0 5.3rem;
+}
+
+h1.header-main {
+  font-size: 6.3rem;
+  font-family: "Gill Sans", monospace;
+  font-weight: 700;
+  color: #003063;
+}
+
+.wrapper {
+  width: 100%;
+  margin-top: 7.7rem;
+}
+
+.match {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 18rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #eaf0f5;
+}
+
+.match__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+}
+
+@media screen and (max-width: 768px) {
+  .match__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.match__dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .match__dates {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    min-height: 10rem;
+    width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+.match__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .match__date {
+    width: 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .match__date {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .match__date {
+    width: 100%;
+  }
+}
+
+.match__date .hyphen {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  line-height: 8.4rem;
+  font-size: 4rem;
+  height: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .match__date .hyphen {
+    padding-bottom: 5rem;
+  }
+}
+
+.match__day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 5.2rem;
+  font-weight: bold;
+  color: #003063;
+}
+
+@media screen and (max-width: 768px) {
+  .match__day {
+    font-size: 7rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .match__day {
+    font-size: 4rem;
+  }
+}
+
+.match__day p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 4rem;
+}
+
+.match__month {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .match__month {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+}
+
+.match__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .match__stats {
+    width: 75%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .match__stats {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.match__img {
+  height: 8rem;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .match__img {
+    margin-bottom: 1rem;
+  }
+}
+
+.match__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10.2rem;
+  margin-left: 2.9rem;
+}
+
+.match__club {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.match__championship {
+  font-size: 2.3rem;
+}
+
+.match__league {
+  font-size: 1.5rem;
+  color: #06e393;
+}
+
+.match__link {
+  height: 10rem;
+  width: 35.6rem;
+  font-size: 1.6rem;
+  border: solid transparent 1rem;
+  color: #ffffff;
+  background-color: #003063;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+}
+
+@media screen and (max-width: 768px) {
+  .match__link {
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.match__link:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #003063;
+  border: solid #003063 1rem;
+}
+/*# sourceMappingURL=style.css.map */

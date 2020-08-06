@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "Gill Sans", monospace;
+  src: url("./assets/fonts/Gill Sans Medium Italic.otf");
+}
+
+// Variables
+
+$font-main: "Gill Sans", monospace;
+$font-secondary: sans-serif;
+$color-primary-blue: #003063;
+$color-primary-green: #06e393;
+$color-primary-white: #ffffff;
+$color-border: #eaf0f5;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: monospace;
+  color: $color-primary-blue;
+  padding: 7rem 5.6rem 0 5.3rem;
+}
+
+h1.header-main {
+  font-size: 6.3rem;
+  font-family: $font-main;
+  font-weight: 700;
+  color: $color-primary-blue;
+}
+
+.wrapper {
+  width: 100%;
+  margin-top: 7.7rem;
+}
+
+.match {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 18rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid $color-border;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__dates {
+    display: flex;
+    flex-direction: column;
+    min-height: 8rem;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      min-height: 10rem;
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+
+    @media screen and (max-width: 768px) {
+      width: 50%;
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+
+    .hyphen {
+      display: block;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      line-height: 8.4rem;
+      font-size: 4rem;
+      height: 1rem;
+      padding-bottom: 3.5rem;
+
+      @media screen and (max-width: 768px) {
+        padding-bottom: 5rem;
+      }
+    }
+  }
+
+  &__day {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: $color-primary-blue;
+
+    @media screen and (max-width: 768px) {
+      font-size: 7rem;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 4rem;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 4rem;
+    }
+  }
+
+  &__month {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__stats {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      width: 75%;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    height: 8rem;
+    margin-top: 1rem;
+    overflow: hidden;
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10.2rem;
+    margin-left: 2.9rem;
+  }
+
+  &__club {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+
+  &__championship {
+    font-size: 2.3rem;
+  }
+
+  &__league {
+    font-size: 1.5rem;
+    color: $color-primary-green;
+  }
+
+  &__link {
+    height: 10rem;
+    width: 35.6rem;
+    font-size: 1.6rem;
+    border: solid transparent 1rem;
+    color: $color-primary-white;
+    background-color: $color-primary-blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.7s all ease;
+
+    @media screen and (max-width: 768px) {
+      width: 80%;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $color-primary-white;
+      color: $color-primary-blue;
+      border: solid $color-primary-blue 1rem;
+    }
+  }
+}
