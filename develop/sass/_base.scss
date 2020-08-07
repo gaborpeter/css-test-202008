@@ -1,0 +1,70 @@
+// Competitions
+section.competitions{
+    padding: 0 15px;
+}
+.competition__year{
+    @include roboto(45px, $main-color, 900);
+}
+.competition-single{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $border-color;
+    margin-bottom: 15px;
+}
+.competition-single__item{
+    padding: 15px;
+}
+.competition-date{
+    @include roboto(45px, $main-color, 900);
+    line-height: 1;
+    display: flex;
+    text-align: center;
+    .date__month{
+       font-size: 18px;
+       text-transform: uppercase;
+    }
+    .date__separator{
+        margin: 0 15px;
+    }
+}
+.competition-type{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    .competition-type__info{
+        .info__city{
+            @include roboto(22px, $main-color, 900);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .info__name{
+            @include roboto(18px, $main-color, 700);
+        }
+        .info__member{
+            @include roboto(18px, $highlighted-color, 700);
+            text-transform: uppercase;
+        }
+    }
+}
+.competition__details{
+    a{
+        @include transition(.4s);
+        @include roboto(18px, #fff, 700);
+        text-transform: uppercase;
+        background-color: $main-color;
+        display: inline-block;
+        text-decoration: none;
+        padding: 20px;
+        &:hover, &:focus{
+            opacity: .8;
+        }
+        &:active{
+            transform: scale(.95);
+        }
+    }
+
+}
+// /Competitions

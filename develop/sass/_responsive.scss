@@ -1,0 +1,41 @@
+/* Responsive Styles */
+@media(min-width:575px) {
+    section.competitions{
+        padding: 0 30px;
+    }
+    .competition-single__item{
+        padding: 30px;
+    }
+    .competition-type{
+        .competition-type__country{
+            margin-right: 10px;
+        }
+    }
+    .competition-date{
+        text-align: initial;
+    }
+    .competition-type{
+        flex-direction: row;
+        text-align: initial;
+    }
+    .competition__details {
+        a{
+            padding: 25px;
+        }
+    }
+}
+
+@media(min-width:991px) {
+    .competition-single{
+        flex-direction: row;
+    }
+}
+
+@media(max-width:767px) {
+
+}
+
+@media(max-width:575px) {
+
+}
+/* -Responsive Styles */

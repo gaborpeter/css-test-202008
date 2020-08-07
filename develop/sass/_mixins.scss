@@ -1,0 +1,19 @@
+/* Site Colors */
+$main-color: #0e305f;
+$highlighted-color: #67de99;
+$border-color: #ebf0f4;
+
+/* General */
+@mixin transition($time) {
+	-webkit-transition:all $time ease-out;
+	-moz-transition:all $time ease-out;
+	transition:all $time ease-out;
+}
+
+/* Fonts */
+@mixin roboto($size, $color, $style) {
+    font-family: 'Roboto', sans-serif;
+	font-weight:$style;
+	font-size:$size;
+	color:$color;
+}
