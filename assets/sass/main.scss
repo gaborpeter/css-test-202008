@@ -1,0 +1,13 @@
+// utils
+@import './utils/fonts';
+@import './utils/normalize';
+@import './utils/vars';
+
+// components
+@import './components/list';
+@import './components/year';
+
+// main
+.page {
+    padding: 0px 60px;
+}

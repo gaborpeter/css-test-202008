@@ -1,0 +1,109 @@
+@import '../utils/_vars.sass';
+
+.page-list {
+    display: flex;
+    flex-direction: column;
+
+    &__competition {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid $lightblue;
+        padding: 20px;
+        margin: 10px 0;
+
+        &__date {
+            display: flex;
+            color: $darkblue;
+            font-size: 3.5rem;
+            font-weight: 600;
+            font-family: 'Exo 2';
+
+            &__start {
+                &__month {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    margin-top: -9px;
+                }
+            }
+
+            &__space {
+                p {
+                    margin: 0;
+                }
+            }
+
+            @media (max-width: $breakpoint-desktop) {
+                justify-content: center;
+            }
+        }
+
+        &__info {
+            display: flex;
+
+            &__logo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                img {
+                    width: 75px;
+                    margin-right: 20px;
+                }
+            }
+
+            &__details {
+                font-family: 'Exo 2';
+                font-weight: 600;
+
+                p {
+                    margin: 5px 0;
+                }
+
+                &__name {
+                    font-size: 1.5rem;
+                    color: $darkblue;
+                }
+
+                &__liga {
+                    font-size: 1.3rem;
+                    color: $darkblue;
+                }
+
+                &__other {
+                    color: $green;
+                }
+            }
+
+            @media (max-width: $breakpoint-desktop) {
+                justify-content: center;
+                padding: 20px;
+            }
+
+            @media (max-width: $breakpoint-phone) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+
+        &__explore {
+            display: flex;
+
+            button {
+                background-color: $darkblue;
+                color: $white;
+                padding: 25px;
+                font-weight: 600;
+            }
+
+            @media (max-width: $breakpoint-desktop) {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: $breakpoint-desktop) {
+            flex-direction: column;
+        }
+
+    }
+}

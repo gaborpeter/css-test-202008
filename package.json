@@ -1,0 +1,26 @@
+{
+  "name": "html-scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "heroku-postbuild": "npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.6.2"
+  }
+}

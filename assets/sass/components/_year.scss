@@ -1,0 +1,13 @@
+@import '../utils/_vars.sass';
+
+.page-year {
+    display: flex;
+    justify-content: flex-start;
+    
+    &__title {
+        font-size: 4rem;
+        font-weight: 600;
+        color: $darkblue;
+        font-family: 'Exo 2';
+    }
+}
