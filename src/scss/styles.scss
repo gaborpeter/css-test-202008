@@ -1,0 +1,132 @@
+@import "reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import "_variables.scss";
+@import "mixins.scss";
+
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.title {
+  color: map-get($colors, txtColor);
+}
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: 576px) {
+    justify-content: space-around;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 15px;
+  border: 1px solid map-get($colors, borderColor);
+  cursor: pointer;
+
+  @media (min-width: 576px) {
+    width: 48%;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    flex-direction: row;
+
+    &__btn-group {
+      margin-right: 25px;
+    }
+    &__date-container {
+      margin-left: 25px;
+    }
+  }
+
+  &__date-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: map-get($colors, txtColor);
+
+    &__first-date {
+      @include flex-column();
+    }
+
+    &__second-date {
+      @include flex-column();
+    }
+    &__day {
+      font-size: 35px;
+      font-weight: 700;
+    }
+    &__month {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &__line {
+    margin: 6px 5px 5px 5px;
+    align-self: flex-start;
+  }
+  &__item-info {
+    @include flex-column();
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  &__flag-option {
+    width: 60px;
+    height: 40px;
+    transform: skew(-20deg);
+    border-top-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+  }
+  &__item-wrapper {
+    @include flex-column();
+    margin-left: 20px;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &__item-title {
+    font-size: 18px;
+    color: map-get($colors, txtColor);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__item-description {
+    font-size: 16px;
+    color: map-get($colors, txtColor);
+    font-weight: 700;
+  }
+
+  &__item-details {
+    color: map-get($colors, detailsColor);
+    font-size: 14px;
+  }
+
+  &__btn-view {
+    background-color: map-get($colors, txtColor);
+    color: map-get($colors, btnColor);
+    border: none;
+    padding: 15px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &__btn-group {
+    margin-bottom: 25px;
+  }
+}
