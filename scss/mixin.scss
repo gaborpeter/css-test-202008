@@ -1,0 +1,23 @@
+@import "vars";
+
+@mixin only-sm-mobile {
+  @media (max-width: $sm-mobile) { @content; }
+}
+@mixin only-mobile {
+  @media (max-width: $lg-mobile) { @content; }
+}
+@mixin large-mobile {
+  @media (min-width: $lg-mobile) { @content; }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) { @content; }
+}
+
+@mixin small-desktop {
+  @media (min-width: $sm-desktop) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) { @content; }
+}

@@ -1,0 +1,44 @@
+@import "fonts";
+@import "mixin";
+@import "vars";
+
+.wrapper {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include small-desktop {
+    padding: 0 46px;
+  }
+}
+
+.flex-row {
+  display: flex;
+  @include only-mobile {
+    flex-wrap: wrap;
+  }
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+
+body {
+  font: 16px "SeptemberMedium", monospace;
+  color: $base-color;
+  @include tablet {
+    font-size: 18px;
+  }
+  @include  desktop {
+    font-size: 27px;
+  }
+}
+.year {
+  font-family: "SeptemberBold" , monospace;
+  font-size: 66px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  @include desktop {
+    font-size: 100px;
+    padding-bottom: 28px;
+    margin-top: 30px;
+  }
+}

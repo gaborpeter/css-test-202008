@@ -1,0 +1,92 @@
+@import "fonts";
+@import "mixin";
+
+#checkInformation {
+  text-align: center;
+  margin-bottom: 20px;
+  p.strong {
+    font-size: 16px;
+    padding: 20px 0 5px;
+    line-height: 1.2em;
+  }
+  .row {
+    margin: 0 -30px;
+   }
+  select {
+    margin-right: 15px;
+  }
+  option {
+    color: #8c8c8c;
+    background-color: #fff;
+  }
+  button {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    color: #f8b117;
+    font-family: Montserrat-Bold, monospace;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 25px;
+    @include desktop {
+      font-size: 18px;
+    }
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active {
+      background-color: #f8b117;
+      color: #fff;
+    }
+  }
+  input, select {
+    font-size: 13px;
+    font-family: Montserrat-Bold, monospace;
+    color: #fff;
+    background-color: #f8b117;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    height: 45px;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #fff;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #fff;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: #fff;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #fff;
+    }
+
+    &:focus {
+      &::-webkit-input-placeholder {
+        opacity: 0;
+      }
+    }
+
+    &:focus {
+      &::-moz-placeholder {
+        opacity: 0;
+      }
+    }
+
+    &:focus {
+      &:-ms-input-placeholder {
+        opacity: 0;
+      }
+    }
+
+    &:focus {
+      &:-moz-placeholder {
+        opacity: 0;
+      }
+    }
+  }
+}

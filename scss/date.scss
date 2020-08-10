@@ -1,0 +1,47 @@
+@import "fonts";
+@import "vars";
+@import "mixin";
+
+.date {
+  font-family: "SeptemberBold", monospace;
+  &__number {
+    font-size: 32px;
+    line-height: 0.7em;
+    @include tablet {
+      font-size: 48px;
+    }
+    @include desktop {
+      font-size: 90px;
+      line-height: 50px;
+      padding-right: 45px;
+    }
+  }
+  &:first-child .date__number {
+    position: relative;
+    &:after {
+      content: "-";
+      padding: 0 5px;
+      @include only-sm-mobile {
+        padding: 0 2px;
+      }
+      @include tablet {
+        padding: 0 10px;
+      }
+      @include desktop {
+        position: absolute;
+        font-size: 70px;
+      }
+    }
+  }
+
+  &__month {
+    font-size: 16px;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 20px;
+    }
+    @include desktop {
+      font-size: 34px;
+    }
+  }
+}
