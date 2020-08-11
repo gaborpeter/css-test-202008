@@ -1,0 +1,204 @@
+body{
+  font: 700 16px/1 'Roboto-Regular', sans-serif;
+}
+.wrapper {
+  padding: 15px 15px;
+}
+.section-1 {
+  .section-heading {
+    color: #0C2F62;
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 50px;
+  }
+  .event-list {
+    li {
+      border: 1px solid #EAF1F5;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .event-list__data {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: #0C2F62;
+      width: 100%;
+      .event-list__data-separator {
+        font-size: 55px;
+        margin: -22px 14px 0 15px;
+      }
+      .event-list__data-wrap-day {
+        font-size: 40px;
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+      .event-list__data-wrap-month {
+        width: 100%;
+        text-align: left;
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+    .event-list__event {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      .event-list__event-flag {
+        margin-right: 30px;
+        width: 128px;
+      }
+      .event-list__event-information {
+        margin-top: 30px;
+        max-width: 174px;
+        .event-list__event-information-title {
+          text-transform: uppercase;
+          color: #0C2F62;
+          font-weight: 700;
+          font-size: 22px;
+        }
+        .event-list__event-information-subinfo1 {
+          color: #0C2F62;
+          display: block;
+          margin-top: 9px;
+          font-size: 16px;
+        }
+        .event-list__event-information-subinfo2 {
+          color: #11E392;
+          display: block;
+          font-size: 16px;
+          margin-top: 9px;
+        }
+      }
+    }
+    .event-list__explore {
+      width: 100%;
+      margin-top: 20px;
+      .event-list__explore-explorebutton {
+        background-color: #0C2F62;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-decoration: none;
+        padding: 18px;
+        display: inline-block;
+      }
+    }
+  }
+}
+@media (min-width: 411px) {
+  .section-1 {
+    .event-list {
+      .event-list__event {
+        .event-list__event-information {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 60px 56px;
+  }
+  .section-1 {
+    .section-heading {
+      font-size: 55px;
+      padding-bottom: 61px;
+    }
+    .event-list {
+      .event-list__data {
+        width: auto;
+        .event-list__data-wrap-day {
+          font-size: 40px;
+        }
+        .event-list__data-wrap-month {
+          font-size: 16px;
+        }
+        .event-list__data-separator {
+          font-size: 80px;
+          margin: -35px 19px 0 11px;
+        }
+      }
+      .event-list__event {
+        margin-top: 0;
+        width: auto;
+        .event-list__event-information {
+          padding-top: 7px;
+          .event-list__event-information-subinfo1 {
+            margin-top: 12px;
+          }
+        }
+      }
+      .event-list__explore {
+        width: auto;
+        .event-list__explore-explorebutton {
+          padding: 20px 12px;
+          letter-spacing: 1.1px;
+          font-size: 16px;
+        }
+      }
+      li {
+        padding: 34px 33px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .section-1 {
+    .section-heading {
+      font-size: 105px;
+    }
+    .event-list {
+      .event-list__data {
+        .event-list__data-wrap-day {
+          font-size: 68px;
+        }
+        .event-list__data-wrap-month {
+          font-size: 28px;
+        }
+        .event-list__data-separator {
+          font-size: 80px;
+        }
+      }
+      .event-list__event {
+        .event-list__event-information {
+          width: auto;
+          max-width: none;
+          .event-list__event-information-title {
+            font-size: 33px;
+          }
+          .event-list__event-information-subinfo1 {
+            font-size: 24px;
+          }
+          .event-list__event-information-subinfo2 {
+            font-size: 25px;
+          }
+        }
+      }
+      .event-list__explore {
+        margin-top: 0;
+        .event-list__explore-explorebutton {
+          padding: 37px 35px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .section-1 {
+    .event-list {
+      .event-list__event {
+        padding-right: 269px;
+      }
+    }
+  }
+}
